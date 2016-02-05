@@ -181,7 +181,7 @@ def run_setup(with_cext):
         kwargs['ext_modules'] = []
 
     setup(
-        name='Logbook',
+        name='logbook',
         version=__version__,
         license='BSD',
         url='http://logbook.pocoo.org/',
