@@ -1,22 +1,23 @@
-all: clean-pyc test
+#all: clean-pyc test
+all: clean-pyc
 
 clean-pyc:
 	find . -name '*.pyc' -exec rm -f {} +
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-test_setup:
-	@python scripts/test_setup.py
+#test_setup:
+#	@python scripts/test_setup.py
 
-test:
-	@py.test -r s tests
+#test:
+#	@py.test -r s tests
 
-toxtest:
-	@tox
+#toxtest:
+#	@tox
 
-vagrant_toxtest:
-	@vagrant up
-	@vagrant ssh --command "rsync -avP --delete --exclude=_build --exclude=.tox /vagrant/ ~/src/ && cd ~/src/ && tox"
+#vagrant_toxtest:
+#	@vagrant up
+#	@vagrant ssh --command "rsync -avP --delete --exclude=_build --exclude=.tox /vagrant/ ~/src/ && cd ~/src/ && tox"
 
 bench:
 	@python benchmark/run.py
@@ -33,4 +34,4 @@ logbook/_speedups.so: logbook/_speedups.pyx
 
 cybuild: logbook/_speedups.so
 
-.PHONY: test upload-docs clean-pyc cybuild bench all docs
+.PHONY: upload-docs clean-pyc cybuild bench all docs
