@@ -1,0 +1,9 @@
+logbook (0.12.5) RELEASED; urgency=medium
+  [ Akash Agrawal ]
+  * Initial release.
+
+  [ Ubuntu ]
+  * Build from custom git repo
+
+ -- Akash Agrawal <akash.agrawal@ril.com>  Fri, 19 Feb 2016 10:51:36 +0530
+

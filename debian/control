@@ -1,0 +1,18 @@
+Source: logbook
+Priority: optional
+Section: misc
+Maintainer: JioCloud Compute <jiocloudcompute.team@rilcom>
+Build-Depends: python-setuptools, python-all, debhelper
+Build-Depends-Indep: python-pbr (>= 0.6)
+Standards-Version: 3.9.6
+Homepage: https://github.com/JioCloudCompute/logbook
+X-Python-Version: >= 2.7
+
+Package: python-logbook
+Architecture: all
+Section: python
+Depends: python,
+ python:any (>= 2.7.5-5~),
+Description: LogBook
+ This provides latest Logbook code for packaging.
+

@@ -1,0 +1,5 @@
+#!/usr/bin/make -f
+export PBR_VERSION=$(shell dpkg-parsechangelog --show-field Version)
+%:
+	        dh $@ --with python2
+
